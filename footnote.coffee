@@ -7,16 +7,16 @@ $(document).ready ->
 	
 	$(".fn-document").each (index) ->
 		# $(this).data("fn-footnum", 1)
-		if $(this).children(".footnote-holder").length == 0
-			$(this).append("<div class='footnote-holder'></div>")
+		if $(".fn-holder", this).length == 0
+			$(this).append("<div class='fn-holder'></div>")
 		
-		holder = $(this).children(".footnote-holder").first()
+		holder = $(".fn-holder", this).first()
 		
-		$(this).children(".footnote").each (index) ->
+		$(".footnote", this).each (index) ->
 			data = $(this).html()
 			id = get_uniqid()
-			holder.append("<div class='fn-foot'><a class='fn-anchor' id='#{id}' href='#'>#{index+1}.</a>&nbsp;&nbsp;#{data}</div>")
-			$(this).replaceWith("<a class='footnote' href='##{id}'>#{index+1}</a>")
+			$(holder).append("<div class='fn-foot'><a class='fn-anchor' id='#{id}' href='##{id}-above'>#{index+1}.</a>&nbsp;&nbsp;#{data}</div>")
+			$(this).replaceWith("<a class='footnote' href='##{id}' id='#{id}-above>#{index+1}</a>")
 		
 		
 			
