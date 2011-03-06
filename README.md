@@ -2,7 +2,7 @@
 
 ## Note
 
-Footnote.js is actually written in CoffeeScript, so the actual source is footnote.coffee. The compiled javascript is included for convenience.
+Footnote.js is actually written in CoffeeScript, so you need to install coffeescript and then compile it with coffee -c. Alternately, pester me enough and I'll just put the compiled version under version control, even though that doesn't really make semantic sense
 
 ## Usage
 
