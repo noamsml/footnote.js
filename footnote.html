@@ -4,46 +4,47 @@
 <script src="footnote.js" type="text/javascript"></script>  
 <link rel="stylesheet" href="footnote.css" />
 
+<style>
+
+body
+{
+	font-family: Halevetica;
+}
+
+h1
+{
+	font-family: Impact;
+}
+
+a
+{
+ color: #05b;
+}
+
+.fn-document
+{
+ width: 500;
+ border-left: 1px #000 dotted;
+ border-right: 1px #000 dotted;
+ margin: auto;
+ margin-top: 10px;
+ padding-top: 20px;
+ padding: 10px;
+ padding-bottom: 30px;
+}
+
+</style>
+
 </head>
 
+
 <body>
-
-<h1>Footnote handling</h1>
 <div class="fn-document">
-<h1>Hello world!</h1>
-
-What's up? <span class="footnote">Hey.</span> You can just use <span class="footnote">Well, with javascript</span> footnotes inline.
-
+<h1>Footnote.js</h1>
+<p><a href="http://github.com/noamsml/footnote.js">fork this on GitHub</a></p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget justo diam. Cras sed erat in quam aliquam viverra. Integer et felis sapien, non posuere mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce convallis elit purus, ac dapibus ante. Donec eu nisl ante, vitae facilisis urna. Vivamus eget dignissim quam. Etiam sagittis gravida massa ut adipiscing. Nullam sem justo, pretium et tristique non, sagittis in odio. Mauris consectetur lorem in sapien malesuada blandit. Sed eu massa non odio suscipit accumsan in non magna. Nunc eu lectus eu neque consequat ullamcorper. Sed ante risus, malesuada non sodales in, facilisis id lectus. Etiam tincidunt blandit odio, vitae pharetra eros placerat id.
-</p><p>
-Praesent ultricies, nunc et ultrices convallis, nisi turpis ornare risus, sed scelerisque turpis dolor ac felis. Aliquam a est leo, suscipit auctor mauris. Donec sit amet felis eros. Ut eget sem felis. Nulla aliquet euismod felis mattis ullamcorper. Etiam pellentesque tortor ac nibh fringilla a gravida ligula imperdiet. Duis luctus odio et arcu eleifend quis tincidunt sem commodo. Integer ac dictum leo. Nullam adipiscing hendrerit nisi, dictum consequat est auctor ut. Nullam fringilla scelerisque dolor quis dignissim. In mattis blandit fermentum.
-</p><p>
-Nullam varius accumsan tellus, non suscipit elit posuere placerat. Ut lectus urna, pretium at pellentesque et, rhoncus in nunc. Etiam faucibus dui lectus. Vestibulum eu nulla ut nisi vestibulum luctus. Ut commodo, tortor in blandit convallis, arcu justo tristique tortor, quis ultricies velit nisl et libero. Etiam at leo tellus. Sed ante sem, feugiat consectetur feugiat sed, fermentum eget justo. Sed bibendum tortor sed nisi pretium sed sagittis ante viverra. Etiam quis venenatis ante. Mauris sed nisl ac nisi vestibulum bibendum. Donec turpis diam, bibendum quis pharetra et, tristique eget nunc. Mauris rutrum odio eu orci congue varius. Donec eu dui eget velit interdum fermentum. Curabitur porttitor, lacus eu ultrices pharetra, mi purus bibendum mauris, ac consequat tortor mi nec massa. Nulla lobortis, turpis eu elementum fermentum, lacus ipsum vehicula dolor, id congue ante nisi vehicula nibh. Pellentesque molestie tristique tempus. Pellentesque odio diam, placerat at tristique vitae, tincidunt sed lorem.
-</p><p>
-Aliquam quis urna a nisi volutpat tempor id sit amet ligula. Aliquam mollis faucibus dui id porttitor. Integer at aliquam neque. Fusce eu metus purus. Ut non lobortis nunc. Nunc scelerisque mattis erat eget cursus. Vivamus ipsum eros, rutrum ut blandit et, scelerisque vitae sem. Vestibulum sem nisi, ultricies a commodo eget, tincidunt vel turpis. Vestibulum accumsan condimentum nunc id vulputate. Aenean rhoncus, ligula bibendum blandit hendrerit, risus erat vehicula metus, id faucibus ipsum felis dictum neque. Maecenas vestibulum lobortis orci, et dignissim lectus gravida a. Phasellus pretium sapien sed orci aliquet tincidunt feugiat vitae erat. Quisque condimentum bibendum dapibus. Suspendisse potenti.
-</p><p>
-Nam fringilla mattis mauris. Ut lacus turpis, pellentesque in accumsan laoreet, rhoncus sed lorem. Cras lectus lectus, iaculis sit amet sollicitudin ac, auctor sed lorem. Integer ullamcorper auctor erat vitae lacinia. Vivamus lacinia neque at ipsum malesuada sagittis quis ut mauris. Morbi ac ipsum in metus pharetra aliquam. Quisque molestie nunc a eros ultrices ullamcorper consequat vitae elit. In hac habitasse platea dictumst. Nunc non arcu mauris, eget elementum ipsum. Sed nisi quam, malesuada vel dapibus at, luctus quis tellus.
-</p>
+Footnotes are easy as pie with footnote.js! <span class="footnote">Must have Javascript enabled</span> All you have to do is make an element with the class <em>fn-document</em> and in it put <code>&lt;span class="footnote"&gt;</code> wherever you want a footnote, and you're done! <span class="footnote">You can even make elements of class <em>fn-holder</em> so you can put your footnotes wherever you want!</span>
 
 </div>
-
-
-<div class="fn-document">
-<h1>Two sets of footnotes concurrently! And you can put them whereever you want!<span class="footnote">Just make an element with the class "fn-holder"</span></h1>
-<div class="fn-holder" style="padding-bottom: 2em; margin-top: 1em" ></div>
-
-You can see that putting footnotes at the bottom isn't your only option <span class="footnote">You can put them anywhere</span>. Watch this:
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget justo diam. Cras sed erat in quam aliquam viverra. Integer et felis sapien, non posuere mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce convallis elit purus, ac dapibus ante. Donec eu nisl ante, vitae facilisis urna. Vivamus eget dignissim quam. Etiam sagittis gravida massa ut adipiscing. Nullam sem justo, pretium et tristique non, sagittis in odio. Mauris consectetur lorem in sapien malesuada blandit. Sed eu massa non odio suscipit accumsan in non magna. Nunc eu lectus eu neque consequat ullamcorper. Sed ante risus, malesuada non sodales in, facilisis id lectus. Etiam tincidunt blandit odio, vitae pharetra eros placerat id.
-</p><p>
-Praesent ultricies, nunc et ultrices convallis, nisi turpis ornare risus, sed scelerisque turpis dolor ac felis. Aliquam a est leo, suscipit auctor mauris. Donec sit amet felis eros. Ut eget sem felis. Nulla aliquet euismod felis mattis ullamcorper. Etiam pellentesque tortor ac nibh fringilla a gravida ligula imperdiet. Duis luctus odio et arcu eleifend quis tincidunt sem commodo. Integer ac dictum leo. Nullam adipiscing hendrerit nisi, dictum consequat est auctor ut. Nullam fringilla scelerisque dolor quis dignissim. In mattis blandit fermentum.
-</p><p>
-Nullam varius accumsan tellus, non suscipit elit posuere placerat. Ut lectus urna, pretium at pellentesque et, rhoncus in nunc. Etiam faucibus dui lectus. Vestibulum eu nulla ut nisi vestibulum luctus. Ut commodo, tortor in blandit convallis, arcu justo tristique tortor, quis ultricies velit nisl et libero. Etiam at leo tellus. Sed ante sem, feugiat consectetur feugiat sed, fermentum eget justo. Sed bibendum tortor sed nisi pretium sed sagittis ante viverra. Etiam quis venenatis ante. Mauris sed nisl ac nisi vestibulum bibendum. Donec turpis diam, bibendum quis pharetra et, tristique eget nunc. Mauris rutrum odio eu orci congue varius. Donec eu dui eget velit interdum fermentum. Curabitur porttitor, lacus eu ultrices pharetra, mi purus bibendum mauris, ac consequat tortor mi nec massa. Nulla lobortis, turpis eu elementum fermentum, lacus ipsum vehicula dolor, id congue ante nisi vehicula nibh. Pellentesque molestie tristique tempus. Pellentesque odio diam, placerat at tristique vitae, tincidunt sed lorem.
-</p><p>
-Aliquam quis urna a nisi volutpat tempor id sit amet ligula. Aliquam mollis faucibus dui id porttitor. Integer at aliquam neque. Fusce eu metus purus. Ut non lobortis nunc. Nunc scelerisque mattis erat eget cursus. Vivamus ipsum eros, rutrum ut blandit et, scelerisque vitae sem. Vestibulum sem nisi, ultricies a commodo eget, tincidunt vel turpis. Vestibulum accumsan condimentum nunc id vulputate. Aenean rhoncus, ligula bibendum blandit hendrerit, risus erat vehicula metus, id faucibus ipsum felis dictum neque. Maecenas vestibulum lobortis orci, et dignissim lectus gravida a. Phasellus pretium sapien sed orci aliquet tincidunt feugiat vitae erat. Quisque condimentum bibendum dapibus. Suspendisse potenti.
-</p><p>
-Nam fringilla mattis mauris. Ut lacus turpis, pellentesque in accumsan laoreet, rhoncus sed lorem. Cras lectus lectus, iaculis sit amet sollicitudin ac, auctor sed lorem. Integer ullamcorper auctor erat vitae lacinia. Vivamus lacinia neque at ipsum malesuada sagittis quis ut mauris. Morbi ac ipsum in metus pharetra aliquam. Quisque molestie nunc a eros ultrices ullamcorper consequat vitae elit. In hac habitasse platea dictumst. Nunc non arcu mauris, eget elementum ipsum. Sed nisi quam, malesuada vel dapibus at, luctus quis tellus.
-<span class="footnote">Made ya look!</span></p>
+</body>
 </html>
