@@ -16,7 +16,7 @@ $(document).ready ->
 			data = $(this).html()
 			id = get_uniqid()
 			$(holder).append("<div class='fn-foot'><a class='fn-anchor' id='#{id}' href='##{id}-above'>#{index+1}.</a>&nbsp;&nbsp;#{data}</div>")
-			$(this).replaceWith("<a class='footnote' href='##{id}' id='#{id}-above>#{index+1}</a>")
+			$(this).replaceWith("<a class='footnote' href='##{id}' id='#{id}-above'>#{index+1}</a>")
 		
 		
 			
